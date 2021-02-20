@@ -1,4 +1,8 @@
-# Koji Turkey
+---
+title:  Koji Turkey
+category: ["holidays"]
+tags:
+---
 
 ## Ingredients
 

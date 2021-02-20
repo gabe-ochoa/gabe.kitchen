@@ -8,10 +8,5 @@ tags:
 
 # Recipe
 
-- See image
-
------
-
-# Original Scanned Image
-
 ![](/img/vegetables/pickles-1.png)
+

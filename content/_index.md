@@ -1,8 +1,4 @@
 ---
-title: "gabe.kitchen"
+heading: "gabe.kitchen"
+subheading: "Stay and eat a while"
 ---
-
-
-## Hello and welcome to gabe.kichen
-
-### Stay and eat for a while
