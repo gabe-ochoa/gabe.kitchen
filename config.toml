@@ -1,0 +1,14 @@
+baseurl = ""
+relativeurls = true
+languageCode = "en-us"
+title = "gabe.kitchen"
+pluralizeListTitles = false
+hrefTargetBlank = true
+enableGitInfo = true
+
+# Markdown config
+[blackfriday]
+fractions = false
+hrefTargetBlank = true
+[markup.goldmark.renderer]
+unsafe= true
