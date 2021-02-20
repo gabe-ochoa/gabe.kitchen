@@ -8,10 +8,10 @@
   NPM_VERSION = "7.3.0"
 
 [context.production]
-  command = "hugo -b gabe.kitchen --gc --minify"
+  command = "git submodule init && git submodule update && hugo -b gabe.kitchen --gc --minify"
 
 [context.deploy-preview]
-  command = "hugo -b gabe.kitchen --gc --minify"
+  command = "git submodule init && git submodule update && hugo -b gabe.kitchen --gc --minify"
 
 [context.branch-deploy]
-  command = "hugo -b gabe.kitchen --gc --minify"
+  command = "git submodule init && git submodule update && hugo -b gabe.kitchen --gc --minify"
