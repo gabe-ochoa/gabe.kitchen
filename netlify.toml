@@ -1,6 +1,6 @@
-[build]
-  publish = "public"
-  functions = "functions"
+# [build]
+#   publish = "public"
+#   functions = "functions"
 
 [build.environment]
   HUGO_VERSION = "0.80.0"
@@ -8,10 +8,4 @@
   NPM_VERSION = "7.3.0"
 
 [context.production]
-  command = "git submodule init && git submodule update && hugo -b gabe.kitchen --gc --minify"
-
-[context.deploy-preview]
-  command = "git submodule init && git submodule update && hugo -b gabe.kitchen --gc --minify"
-
-[context.branch-deploy]
-  command = "git submodule init && git submodule update && hugo -b gabe.kitchen --gc --minify"
+  command = "git submodule update --init --recursive --remote && hugo -b gabe.kitchen --gc --minify"
