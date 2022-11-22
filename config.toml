@@ -1,113 +1,108 @@
-# DO NOT REMOVE THIS
-theme = "hugo-theme-codex" 
+# hugo server --minify --themesDir ... --baseURL=http://0.0.0.0:1313/theme/hugo-book/
 
-# Override these settings with your own
-title = "codex"
-languageCode = "en-us"
-baseURL = "gabe.kitchen"
-copyright = "© {year}"
+baseURL = 'https://gabe.kitchen/'
+title = "Gabe's Kitchen"
+theme = 'hugo-book'
 
-# Add your Disqus shortname here.
-# disqusShortname = ""
+# Book configuration
+disablePathToLower = true
+enableGitInfo = true
 
-# Add your Google Analytics identifier: UA-XXXXXXXX-X
-# googleAnalytics = "" 
-
-# Optional params
-[params]
-  # Follow the Hugo date/time format reference here: 
-  # https://gohugo.io/functions/format/#gos-layout-string
-  dateFormat = "Jan 2 2006"
-
-  # Links to your social accounts, comment/uncomment as needed. Icons will be displayed for those specified.
-  twitter = "https://twitter.com/gabe-ochoa"
-  github = "https://github.com/gabe-ochoa/gabe.kitchen"
-  # email = "mailto:<your email>"
-  # mastodon = "https://mastodon.social/@nickname"
-  # facebook = "https://facebook.com/<your handle>"
-  # gitlab = "https://gitlab.com/<your handle>"
-  # instagram = "https://instagram.com/<your handle>"
-  # linkedin = "<link to your profile>"
-  # youtube = "https://www.youtube.com/channel/<your channel>"
-  
-  # Titles for your icons (shown as tooltips), and also their display order.
-  # Currently, these icons are supported: 
-  #   "Twitter", "GitHub", "Email", "Mastodon", "Facebook", "GitLab", "Instagram", "LinkedIn", "YouTube"
-  iconOrder = ["Twitter", "GitHub"]
-
-  # Metadata for Twitter cards, defaults to params.twitter
-  # twitterSite = "@<your handle>"
-  # twitterAuthor = "@<your handle>"
-
-  # Set to true to display page title in table of contents in blog posts.
-  showPageTitleInTOC = false
-
-# This disables Hugo's default syntax highlighting in favor
-# of prismjs. If you wish to use Hugo's default syntax highlighting
-# over prismjs, remove this. You will also need to remove the prismjs
-# vendor script in layouts/blog/single.html.
+# Needed for mermaid/katex shortcodes
 [markup]
-  [markup.highlight]
-    codeFences = false
-    
-  # Set to false to disallow raw HTML in markdown files
-  [markup.goldmark.renderer]
-      unsafe = true
+[markup.goldmark.renderer]
+  unsafe = true
 
-# Controls the navigation
-[[menu.main]]
-  identifier = "appetizers"
-  name = "appetizers"
-  title = "appetizers"
-  url = "/appetizers"
-[[menu.main]]
-  identifier = "bread"
-  name = "bread"
-  title = "bread"
-  url = "/bread"
-[[menu.main]]
-  identifier = "desserts"
-  name = "desserts"
-  title = "desserts"
-  url = "/desserts"
-[[menu.main]]
-  identifier = "eggs"
-  name = "eggs"
-  title = "Eggs"
-  url = "/eggs"
-[[menu.main]]
-  identifier = "holidays"
-  name = "holidays"
-  title = "holidays"
-  url = "/holidays"
-[[menu.main]]
-  identifier = "eggs"
-  name = "eggs"
-  title = "Eggs"
-  url = "/eggs"
-[[menu.main]]
-  identifier = "salads"
-  name = "salads"
-  title = "salads"
-  url = "/salads"
-[[menu.main]]
-  identifier = "vegetables"
-  name = "vegetables"
-  title = "vegetables"
-  url = "/vegetables"
-[[menu.main]]
-  identifier = "meats"
-  name = "meats"
-  title = "meats"
-  url = "/meats"
+[markup.tableOfContents]
+  startLevel = 1
 
-enableEmoji = true
-enableGitInfo = false
-enableRobotsTXT = true
-languageCode = "en-US"
+# Multi-lingual mode config
+# There are different options to translate files
+# See https://gohugo.io/content-management/multilingual/#translation-by-filename
+# And https://gohugo.io/content-management/multilingual/#translation-by-content-directory
+[languages]
+[languages.en]
+  languageName = 'English'
+  contentDir = 'content'
+  weight = 1
 
+[menu]
+# [[menu.before]]
+# [[menu.after]]
+#   name = "Github"
+#   url = "https://github.com/alex-shpak/hugo-book"
+#   weight = 10
 
-[sitemap]
-  changefreq = "weekly"
-  filename = "sitemap.xml"
-  priority = 0.5
+# [[menu.after]]
+#   name = "Hugo Themes"
+#   url = "https://themes.gohugo.io/hugo-book/"
+#   weight = 20
+
+[params]
+  # (Optional, default light) Sets color theme: light, dark or auto.
+  # Theme 'auto' switches between dark and light modes based on browser/os preferences
+  BookTheme = 'light'
+
+  # (Optional, default true) Controls table of contents visibility on right side of pages.
+  # Start and end levels can be controlled with markup.tableOfContents setting.
+  # You can also specify this parameter per page in front matter.
+  BookToC = true
+
+  # (Optional, default none) Set the path to a logo for the book. If the logo is
+  # /static/logo.png then the path would be logo.png
+  # BookLogo = 'logo.png'
+
+  # (Optional, default none) Set leaf bundle to render as side menu
+  # When not specified file structure and weights will be used
+  # BookMenuBundle = '/menu'
+
+  # (Optional, default docs) Specify root page to render child pages as menu.
+  # Page is resoled by .GetPage function: https://gohugo.io/functions/getpage/
+  # For backward compatibility you can set '*' to render all sections to menu. Acts same as '/'
+  BookSection = '*'
+
+  # Set source repository location.
+  # Used for 'Last Modified' and 'Edit this page' links.
+  BookRepo = 'https://github.com/gabe-ochoa/gabe.kitchen'
+
+  # (Optional, default 'commit') Specifies commit portion of the link to the page's last modified
+  # commit hash for 'doc' page type.
+  # Requires 'BookRepo' param.
+  # Value used to construct a URL consisting of BookRepo/BookCommitPath/<commit-hash>
+  # Github uses 'commit', Bitbucket uses 'commits'
+  # BookCommitPath = 'commit'
+
+  # Enable "Edit this page" links for 'doc' page type.
+  # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
+  # Edit path must point to root directory of repo.
+#   BookEditPath = 'edit/main/exampleSite'
+
+  # Configure the date format used on the pages
+  # - In git information
+  # - In blog posts
+  BookDateFormat = 'January 2, 2006'
+
+  # (Optional, default true) Enables search function with flexsearch,
+  # Index is built on fly, therefore it might slowdown your website.
+  # Configuration for indexing can be adjusted in i18n folder per language.
+  BookSearch = true
+
+  # (Optional, default true) Enables comments template on pages
+  # By default partals/docs/comments.html includes Disqus template
+  # See https://gohugo.io/content-management/comments/#configure-disqus
+  # Can be overwritten by same param in page frontmatter
+#   BookComments = true
+
+  # /!\ This is an experimental feature, might be removed or changed at any time
+  # (Optional, experimental, default false) Enables portable links and link checks in markdown pages.
+  # Portable links meant to work with text editors and let you write markdown without {{< relref >}} shortcode
+  # Theme will print warning if page referenced in markdown does not exists.
+  BookPortableLinks = true
+
+  # /!\ This is an experimental feature, might be removed or changed at any time
+  # (Optional, experimental, default false) Enables service worker that caches visited pages and resources for offline use.
+#   BookServiceWorker = true
+
+  # /!\ This is an experimental feature, might be removed or changed at any time
+  # (Optional, experimental, default false) Enables a drop-down menu for translations only if a translation is present.
+#   BookTranslatedOnly = false
