@@ -14,4 +14,4 @@ tags:
 
 # Original Scanned Image
 
-![](/img/holidays/Latkes.png)
+![](/img/holidays/latkes.png)
