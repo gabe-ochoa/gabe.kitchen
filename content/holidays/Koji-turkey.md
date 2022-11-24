@@ -7,26 +7,30 @@ tags:
 ## Ingredients
 
 ### Turkey brine
+
 For an 18-20lb turkey:
-2 cups shio koji
-1½ cups (10½ ounces) light brown sugar
-1½ cups kosher salt
-1 18-20lb turkey
-6 tablespoons room temperature unsalted butter 
+* 2 cups shio koji
+* 1½ cups (10½ ounces) light brown sugar
+* 1½ cups kosher salt
+* 1 18-20lb turkey
+* 6 tablespoons room temperature unsalted butter 
 
 ### Turkey roast
-2 tablespoons vegetable oil
-Black pepper
-1 bunch thyme sprigs
-1 bunch rosemary sprigs
+
+* 2 tablespoons vegetable oil
+* Black pepper
+* 1 bunch thyme sprigs
+* 1 bunch rosemary sprigs
 
 ### Turkey glaze
-1 tablespoon shio koji, blended
-3 tablespoons unsalted butter,
-melted
-Small handful of hardy herbs (such as sage, rosemary, bay leaves, and/or thyme)
 
-## Prep and cook
+* 1 tablespoon shio koji, blended
+* 3 tablespoons unsalted butter, melted
+* Small handful of hardy herbs (such as sage, rosemary, bay leaves, and/or thyme)
+
+---
+
+## Prep
 
 ### Make the dry brine
 
@@ -49,12 +53,15 @@ Adjust oven rack to lower-middle position and heat oven to 400 degrees. Line rim
 ### Glaze
 Melt butter and and aromatic bundle together. Whisk remaining 1 tablespoon blended shio koji until combined; set aside for the glaze.
 
-### Cook
+---
+## Cook
 
 Total cooking time: 2 hours
 
-Pre-heat oven to 475.
+<p>Pre-heat oven to 400.</p>
 
-Roast for 30 minutes. Brush skin with shio koji–butter glaze, lower oven to 300, and continue to roast for 25 minutes longer. Rotate sheet, glaze, and roast until breast registers 150 degrees F and thighs register 170 degrees F, 25 to 45 minutes.
+<p>Roast for 30 minutes. Brush skin with shio koji–butter glaze and continue to roast for 25 minutes longer. Rotate sheet, glaze, and roast for 25 to 45 minutes until breast registers 150 degrees F and thighs register 165 degrees F.</p>
 
-Removing pieces as they come to temperature transfer turkey to carving board, and let rest for 30 minutes, and carve.
+<p>Remove pieces as they come to temperature transfer turkey to carving board.</p>
+
+<p>Let rest for 30 minutes, and carve.</p>
